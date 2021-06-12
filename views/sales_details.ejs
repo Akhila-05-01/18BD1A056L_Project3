@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Fruit Basket
+        </title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body align="center">
+        <h1><center><u>FRUIT BASKET</u></center></h1>
+        <h2><a href="/" class="C2">HOME</a></h2>
+        <h3> <a href="/create" class="c2">ADD NEW FRUIT </a> </h3>
+        <h3> <a href="/updatesales" class="c2">UPDATED SALES</a></h3>
+        <h3><a href="/salesdetails" class="c2">SALES DETAILS</a></h2>
+        <center>
+            <table class="table table-striped projects">
+                <thead>
+                    <tr>
+                      <tr>
+                        <th style="width: 10%" >Purchase Date</th>
+                        <th style="width: 10%" >Purchase Id</th>
+                        <th style="width: 10%" >Selling Price</th>
+                        <th style="width: 10%" >Quantity</th>
+                        <th style="width: 10%" >Total Sales</th>
+                      </tr>
+                    </tr>
+                </thead>
+                <tbody>
+                  <% for(var i=0;i<data.length;i++) {%>
+                  <tr>
+                      <td><%= data[i].Purchase_Date%></td>
+                      <td><%= data[i].fr_id %></td>
+                      <td><%= data[i].selling_price %></td>
+                      <td><%= data[i].Quantity %></td>
+                      <td><%= data[i].Total_Sales %></td> 
+                  </tr>
+                  <% } %>    
+              </tbody>   
+            </table>
+        </center>
+        <br><br>
+    </body>
+</html>

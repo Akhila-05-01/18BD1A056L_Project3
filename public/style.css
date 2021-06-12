@@ -1,0 +1,31 @@
+.c1{
+    text-align: center;
+    text-decoration: violet;
+}
+
+.c2{
+    text-decoration: none;
+}
+
+table,th,td{
+    border:5px solid black;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding: 25px;
+    text-align:left;
+}
+
+th{
+    background-color:blue;
+    color:white;
+}
+
+tr:nth-child(even){
+    background-color: #F0F8FF;
+}
+
+tr:nth-child(odd){
+    background-color: #FFE4C4;
+}
